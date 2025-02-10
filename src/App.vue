@@ -83,7 +83,10 @@
       />
     </div>
     <div class="options">
-      
+      <p v-for="type in dataTypes">
+        <input type="radio" :value="type" name="type">
+        <label for="type">{{ type }}</label>
+      </p>
     </div>
     <div class="chart"></div>
   </div>
